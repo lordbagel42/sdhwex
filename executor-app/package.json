@@ -2,7 +2,7 @@
   "name": "sdhwex-manager",
   "private": true,
   "type": "module",
-  "description": "Manage sdhwex Cloudflare findings and feedback text. Data-only publishing, approvals, backups and conflict checks.",
+  "description": "Manage sdhwex Cloudflare findings and feedback text. Data-only immediate publishing, backups and conflict checks.",
   "dependencies": {
     "apps": "0.0.1-beta.122"
   },

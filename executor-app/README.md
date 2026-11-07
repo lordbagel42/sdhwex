@@ -17,7 +17,7 @@ Ask an agent connected to Executor, for example:
 
 > Replace the shipping-guidelines sentence with [new text].
 
-The agent reads `status` or `getProject`, then passes the returned `feedHash` as `expectedHash` to an update. **Every remote write requires approval.** `updateReasons` replaces only the supplied fail/warn/verdict fields; omitted fields remain unchanged and `[]` clears a list. Wording is plain text, never executable code. Dates stay unchanged unless an entire snapshot is explicitly replaced using the report's actual check date.
+The agent reads `status` or `getProject`, then passes the returned `feedHash` as `expectedHash` to an update. **Remote writes execute immediately without an additional approval prompt.** Authentication, input validation, backups and stale-write checks remain enabled. `updateReasons` replaces only the supplied fail/warn/verdict fields; omitted fields remain unchanged and `[]` clears a list. Wording is plain text, never executable code. Dates stay unchanged unless an entire snapshot is explicitly replaced using the report's actual check date.
 
 Tools:
 
@@ -35,7 +35,7 @@ Installed extensions check for updates every five minutes; allow about six minut
 
 The app validates the extension's schema, limits feed size to 750000 bytes, serializes its own publications with a persistent SQLite lock, and saves full before/after data. Stale hashes are rejected. A timeout or uncertain API result retains the lock instead of retrying. `resolvePending` compares live content with both saved hashes; an interrupted active operation must be five minutes old before recovery. It never repeats a write. Backups are private app data and are retained until the app is removed.
 
-Cloudflare does not supply an atomic feed compare-and-swap here. The app checks immediately before upload but cannot prevent an outside writer from racing it. Route edits through this app rather than concurrent dashboard/CLI deployments. Restoring a backup affects both stages and guidelines; review that scope before approving.
+Cloudflare does not supply an atomic feed compare-and-swap here. The app checks immediately before upload but cannot prevent an outside writer from racing it. Route edits through this app rather than concurrent dashboard/CLI deployments. Restoring a backup affects both stages and guidelines; take that full scope into account before calling restore.
 
 The app reuses the same provider definition as the existing Cloudflare API app. Your account is linked in **user scope**, not shared with every caller. Credentials stay in Executor and are injected only into the declared header on `api.cloudflare.com`. No credentials are stored in source or publication history.
 

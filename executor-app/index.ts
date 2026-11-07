@@ -1,5 +1,5 @@
 import { array, boolean, defineApp, json, mutation, number, object, query, router, string, type Infer } from 'apps';
-import { always } from 'apps/operations/approval';
+import { never } from 'apps/operations/approval';
 import { FEED_URL, feedHash, readLive, stage, validateFeed, type Project, type Snapshot } from './feed.js';
 import { requirements } from './requirements.js';
 import { history, pendingOperation, publication, publicationSummary, publish, resolvePending, type ReadContext, type WriteContext } from './publish.js';
@@ -61,8 +61,8 @@ export default defineApp(requirements, {
         project: resultJSON(feed[key].projects.find(p => p.project_id === input.projectId) ?? null) };
     }),
     updateReasons: mutation({
-      description: 'Approval required. Replace fail/warn lists and/or verdict for one project. Omitted fields are preserved; [] clears a list. Requires a fresh expectedHash. Dates stay unchanged.',
-      approval: always(),
+      description: 'Replace fail/warn lists and/or verdict for one project. Omitted fields are preserved; [] clears a list. Requires a fresh expectedHash. Dates stay unchanged.',
+      approval: never(),
       input: object({ expectedHash, stage: string(), projectId: string({ minLength: 1 }),
         fail: array(string()).optional(), warn: array(string()).optional(), verdict: string().optional() }),
       output: publishOutput
@@ -83,8 +83,8 @@ export default defineApp(requirements, {
       });
     }),
     upsertProject: mutation({
-      description: 'Approval required. Add or replace a complete project JSON record in build or design. Preserve fields from getProject when editing. Build needs devlogs/build_devlogs; design needs tier/requested. Requires expectedHash.',
-      approval: always(),
+      description: 'Add or replace a complete project JSON record in build or design. Preserve fields from getProject when editing. Build needs devlogs/build_devlogs; design needs tier/requested. Requires expectedHash.',
+      approval: never(),
       input: object({ expectedHash, stage: string(), project: json() }), output: publishOutput
     }, async (ctx: WriteContext, input) => {
       const key = stage(input.stage);
@@ -98,8 +98,8 @@ export default defineApp(requirements, {
       });
     }),
     removeProject: mutation({
-      description: 'Approval required. Remove one project from one stage only. It becomes unknown in the extension. The other stage is untouched. Requires expectedHash.',
-      approval: always(), input: object({ expectedHash, stage: string(), projectId: string({ minLength: 1 }) }), output: publishOutput
+      description: 'Remove one project from one stage only. It becomes unknown in the extension. The other stage is untouched. Requires expectedHash.',
+      approval: never(), input: object({ expectedHash, stage: string(), projectId: string({ minLength: 1 }) }), output: publishOutput
     }, async (ctx: WriteContext, input) => {
       const key = stage(input.stage);
       return publish(ctx, input.expectedHash, `Remove ${key} project #${input.projectId}`, feed => {
@@ -109,8 +109,8 @@ export default defineApp(requirements, {
       });
     }),
     replaceSnapshot: mutation({
-      description: 'Approval required. Replace one entire stage snapshot with JSON {checkedAt: YYYY-MM-DD, projects: [...]}. Use the actual report check date. Other stage and guidelines are preserved. Requires expectedHash.',
-      approval: always(), input: object({ expectedHash, stage: string(), snapshot: json() }), output: publishOutput
+      description: 'Replace one entire stage snapshot with JSON {checkedAt: YYYY-MM-DD, projects: [...]}. Use the actual report check date. Other stage and guidelines are preserved. Requires expectedHash.',
+      approval: never(), input: object({ expectedHash, stage: string(), snapshot: json() }), output: publishOutput
     }, async (ctx: WriteContext, input) => {
       const key = stage(input.stage);
       return publish(ctx, input.expectedHash, `Replace ${key} snapshot`, feed => {
@@ -119,8 +119,8 @@ export default defineApp(requirements, {
       });
     }),
     updateGuidelines: mutation({
-      description: 'Approval required. Change the shipping-guidelines sentence inserted by the rejection helper and appended to feedback drafts. Plain text only, at most 20000 characters. Requires expectedHash.',
-      approval: always(), input: object({ expectedHash, guidelines: string({ minLength: 1 }) }), output: publishOutput
+      description: 'Change the shipping-guidelines sentence inserted by the rejection helper and appended to feedback drafts. Plain text only, at most 20000 characters. Requires expectedHash.',
+      approval: never(), input: object({ expectedHash, guidelines: string({ minLength: 1 }) }), output: publishOutput
     }, async (ctx: WriteContext, input) => publish(ctx, input.expectedHash, 'Update shipping-guidelines wording', feed => {
       feed.guidelines = input.guidelines;
       return feed;
@@ -134,21 +134,21 @@ export default defineApp(requirements, {
       input: object({ publicationId: string({ minLength: 1 }) }), output: json()
     }, async (ctx: ReadContext, input) => resultJSON(publicationSummary(publication(ctx, input.publicationId)))),
     restore: mutation({
-      description: 'Approval required. Restore the complete feed saved BEFORE a selected publication. Creates a new backed-up publication. Requires the current live expectedHash; never blindly overwrites newer changes.',
-      approval: always(), input: object({ expectedHash, publicationId: string({ minLength: 1 }) }), output: publishOutput
+      description: 'Restore the complete feed saved BEFORE a selected publication. Creates a new backed-up publication. Requires the current live expectedHash; never blindly overwrites newer changes.',
+      approval: never(), input: object({ expectedHash, publicationId: string({ minLength: 1 }) }), output: publishOutput
     }, async (ctx: WriteContext, input) => {
       const row = publication(ctx, input.publicationId);
       const backup = validateFeed(JSON.parse(row.before_json));
       return publish(ctx, input.expectedHash, `Restore backup before ${input.publicationId}`, () => backup);
     }),
     resolvePending: mutation({
-      description: 'Approval required. Resolve an uncertain/interrupted publication by comparing live data with its saved hashes, then release the lock. Never replays an upload. An interrupted active upload must be at least five minutes old.',
-      approval: always(), input: object({ operationId: string({ minLength: 1 }) }),
+      description: 'Resolve an uncertain/interrupted publication by comparing live data with its saved hashes, then release the lock. Never replays an upload. An interrupted active upload must be at least five minutes old.',
+      approval: never(), input: object({ operationId: string({ minLength: 1 }) }),
       output: object({ operationId: string(), state: string(), liveHash: string(), message: string() })
     }, async (ctx: WriteContext, input) => resolvePending(ctx, input.operationId))
   }, {
     title: 'sdhwex Manager',
-    description: 'Data-only administration of the fixed sdhwex Cloudflare feed, with approvals, conflict detection, publication backups and restore.',
-    instructions: 'Read status or getProject before writing; pass its feedHash as expectedHash. Use build/design explicitly. All remote writes require user approval. Explain the exact change before requesting it. Never repeat a failed/unknown publication: inspect getPublication and resolvePending. Data appears in installed extensions within about six minutes. No tool accepts arbitrary code, URLs or Worker/account names. External Cloudflare writers can race a publish; serialize edits through this app. Remote changes do not update the GitHub JSON or bundled offline fallback; export/reconcile them before using the old local deploy:data command.'
+    description: 'Data-only administration of the fixed sdhwex Cloudflare feed, with immediate publishing, conflict detection, publication backups and restore.',
+    instructions: 'Read status or getProject before writing; pass its feedHash as expectedHash. Use build/design explicitly. Remote writes execute immediately without additional approval prompts. Follow the requested scope. Never repeat a failed/unknown publication: inspect getPublication and resolvePending. Data appears in installed extensions within about six minutes. No tool accepts arbitrary code, URLs or Worker/account names. External Cloudflare writers can race a publish; serialize edits through this app. Remote changes do not update the GitHub JSON or bundled offline fallback; export/reconcile them before using the old local deploy:data command.'
   })
 });
