@@ -1,0 +1,3126 @@
+{
+  "checkedAt": "2026-11-04",
+  "projects": [
+    {
+      "ship_id": "1704",
+      "project_id": "45369",
+      "title": "flathead",
+      "submitted": "2026-09-19",
+      "repo": "https://github.com/michaelsumin78-hue/flathead_robot",
+      "demo": "32200",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/45369",
+      "tier": "X",
+      "requested": 322,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "1896",
+      "project_id": "30845",
+      "title": "Raptor08 - Bipedal Robot",
+      "submitted": "2026-09-26",
+      "repo": "https://github.com/deepnee123/biped-affordable-rl",
+      "demo": "60000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/30845",
+      "tier": "X",
+      "requested": 600,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "1910",
+      "project_id": "55399",
+      "title": "SAMMY-a wireless morse code communicator",
+      "submitted": "2026-09-27",
+      "repo": "https://github.com/pugotup/SAMMY--radio-morse-code-communicator",
+      "demo": "2500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/55399",
+      "tier": "B",
+      "requested": 25,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "README mentions a PCB but no PCB source/gerbers in repo"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "1921",
+      "project_id": "49692",
+      "title": "HoverCruiser",
+      "submitted": "2026-09-27",
+      "repo": "https://github.com/Tomas-Kuchta-FPV/HoverCruiser",
+      "demo": "47900",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/49692",
+      "tier": "X",
+      "requested": 479,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "1925",
+      "project_id": "48706",
+      "title": "Solar wall light!",
+      "submitted": "2026-09-28",
+      "repo": "https://github.com/CoolMetalClaws/Backyard-Solar-Wall-Light",
+      "demo": "10000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/48706",
+      "tier": "A",
+      "requested": 100,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "1927",
+      "project_id": "62749",
+      "title": "Vert's Hack Card",
+      "submitted": "2026-09-28",
+      "repo": "https://github.com/VihaanVinoth/vert-card",
+      "demo": "800",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/62749",
+      "tier": "B",
+      "requested": 8,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "1928",
+      "project_id": "44065",
+      "title": "Phantom Vertex",
+      "submitted": "2026-09-28",
+      "repo": "https://github.com/PhantomPX/Phantom-Vertex",
+      "demo": "7000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/44065",
+      "tier": "A",
+      "requested": 70,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "README mentions a PCB but no PCB source/gerbers in repo",
+        "no firmware/code in repo"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "1929",
+      "project_id": "17711",
+      "title": "interesting shelf",
+      "submitted": "2026-09-28",
+      "repo": "https://github.com/NeoRazer504/shelf",
+      "demo": "5400",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/17711",
+      "tier": "A",
+      "requested": 54,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "README is too thin (77 words): needs what it is, how it's used, why it was made"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "1930",
+      "project_id": "57447",
+      "title": "Panda Connector",
+      "submitted": "2026-09-28",
+      "repo": "https://github.com/insertnewusername/usbhub",
+      "demo": "3100",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/57447",
+      "tier": "A",
+      "requested": 31,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "1936",
+      "project_id": "56053",
+      "title": "PCB J-Card",
+      "submitted": "2026-09-28",
+      "repo": "https://github.com/junpark527-hash/J-PCB-Card",
+      "demo": "3400",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/56053",
+      "tier": "A",
+      "requested": 34,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "BOM has no purchase links"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "1937",
+      "project_id": "14403",
+      "title": "Drone Project",
+      "submitted": "2026-09-28",
+      "repo": "https://github.com/Catsarepro21/Drone_Project",
+      "demo": "60000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/14403",
+      "tier": "X",
+      "requested": 600,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "README mentions a PCB but no PCB source/gerbers in repo"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "1938",
+      "project_id": "54116",
+      "title": "Smart Doorbell Kit",
+      "submitted": "2026-09-28",
+      "repo": "https://github.com/Djayden-R/Smart-Doorbell-Kit",
+      "demo": "2500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/54116",
+      "tier": "B",
+      "requested": 25,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "1940",
+      "project_id": "57197",
+      "title": "Project CAM-X",
+      "submitted": "2026-09-28",
+      "repo": "https://github.com/knoerrcalvin-beep/APEX-CNC-",
+      "demo": "60000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/57197",
+      "tier": "X",
+      "requested": 600,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no BOM (.csv in repo root)",
+        "README is too thin (20 words): needs what it is, how it's used, why it was made",
+        "README has no images (needs a screenshot of the full 3D model)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "1944",
+      "project_id": "54311",
+      "title": "Layer Meter",
+      "submitted": "2026-09-29",
+      "repo": "https://github.com/MFalcon92/The-Layer-Meter",
+      "demo": "5000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/54311",
+      "tier": "A",
+      "requested": 50,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "1945",
+      "project_id": "18720",
+      "title": "FLIGHT",
+      "submitted": "2026-09-29",
+      "repo": "https://github.com/luke-walsh1/FLIGHT",
+      "demo": "9500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/18720",
+      "tier": "A",
+      "requested": 95,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM not a CSV in repo root (found PCB/BOM.csv)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "1950",
+      "project_id": "46149",
+      "title": "Weather Station",
+      "submitted": "2026-09-29",
+      "repo": "https://github.com/matthew-the-king/Weather-Station-V1",
+      "demo": "20000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/46149",
+      "tier": "S",
+      "requested": 200,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM not a CSV in repo root (found PCB/production/bom.csv)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "1956",
+      "project_id": "42071",
+      "title": "Custom fc drone project",
+      "submitted": "2026-09-29",
+      "repo": "https://github.com/jeffmc6767/Autonomous-drone",
+      "demo": "36500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/42071",
+      "tier": "X",
+      "requested": 365,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "1959",
+      "project_id": "37039",
+      "title": "MagniAssist",
+      "submitted": "2026-09-29",
+      "repo": "https://github.com/NeilHe2011/MagniAssist",
+      "demo": "8600",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/37039",
+      "tier": "A",
+      "requested": 86,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "BOM not a CSV in repo root (found BOM.md)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "1961",
+      "project_id": "19479",
+      "title": "Stardeck",
+      "submitted": "2026-09-30",
+      "repo": "https://github.com/YodaheWondimu/Stardeck",
+      "demo": "10000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/19479",
+      "tier": "A",
+      "requested": 100,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no firmware/code in repo",
+        "README has 1 image; with a PCB it needs both the 3D model and a PCB screenshot"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "1962",
+      "project_id": "27212",
+      "title": "Bumper Goals",
+      "submitted": "2026-09-30",
+      "repo": "https://github.com/NidheeshP28/BumperGoals",
+      "demo": "10000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/27212",
+      "tier": "A",
+      "requested": 100,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "1966",
+      "project_id": "50261",
+      "title": "Chess board",
+      "submitted": "2026-09-30",
+      "repo": "https://github.com/Alen1132011/Smart-chess-board",
+      "demo": "13000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/50261",
+      "tier": "S",
+      "requested": 130,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "1967",
+      "project_id": "66958",
+      "title": "camera",
+      "submitted": "2026-09-30",
+      "repo": "https://github.com/amiterlichpico-beep/camera",
+      "demo": "40000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/66958",
+      "tier": "X",
+      "requested": 400,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no BOM (.csv in repo root)",
+        "README has no images (needs a screenshot of the full 3D model)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "1968",
+      "project_id": "55410",
+      "title": "UHBadge",
+      "submitted": "2026-09-30",
+      "repo": "https://github.com/gianluca-rainis/UHBadge",
+      "demo": "17500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/55410",
+      "tier": "S",
+      "requested": 175,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "1969",
+      "project_id": "50949",
+      "title": "Key65",
+      "submitted": "2026-09-30",
+      "repo": "https://github.com/PointerLife/key65",
+      "demo": "6800",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/50949",
+      "tier": "A",
+      "requested": 68,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "GitHub repo unreachable: repo not found or private"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "1971",
+      "project_id": "29405",
+      "title": "Wled board for led strip",
+      "submitted": "2026-09-30",
+      "repo": "https://github.com/lolkomoko001/Wled-controler-board-V1-",
+      "demo": "2000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/29405",
+      "tier": "B",
+      "requested": 20,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no firmware/code in repo",
+        "BOM has no purchase links",
+        "README is too thin (35 words): needs what it is, how it's used, why it was made"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "1975",
+      "project_id": "52883",
+      "title": "ToolKit Car",
+      "submitted": "2026-10-01",
+      "repo": "https://github.com/kaiak-dev/ToolKit-Car",
+      "demo": "12000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/52883",
+      "tier": "A",
+      "requested": 120,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM not a CSV in repo root (found BOM/ToolKit Car BOM - Sheet1.csv)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "1982",
+      "project_id": "45122",
+      "title": "ChladniPlate",
+      "submitted": "2026-10-02",
+      "repo": "https://github.com/jahaanb7/ChladniPlate",
+      "demo": "7500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/45122",
+      "tier": "A",
+      "requested": 75,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no firmware/code in repo"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "1983",
+      "project_id": "60106",
+      "title": "X173-126 Citation",
+      "submitted": "2026-10-02",
+      "repo": "https://github.com/goose218/x126",
+      "demo": "17000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/60106",
+      "tier": "S",
+      "requested": 170,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo (only STL/3MF meshes)"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "1988",
+      "project_id": "62959",
+      "title": "Servo Tester",
+      "submitted": "2026-10-02",
+      "repo": "https://github.com/VX7FAR/Servo-Tester",
+      "demo": "4500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/62959",
+      "tier": "A",
+      "requested": 45,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "1989",
+      "project_id": "56824",
+      "title": "The Gacropad",
+      "submitted": "2026-10-03",
+      "repo": "https://github.com/noopgabe/The-Gacropad",
+      "demo": "6500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/56824",
+      "tier": "A",
+      "requested": 65,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "README has 1 image; with a PCB it needs both the 3D model and a PCB screenshot"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "1994",
+      "project_id": "27701",
+      "title": "Tracer",
+      "submitted": "2026-10-03",
+      "repo": "https://github.com/carliechao/TracerArm",
+      "demo": "10100",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/27701",
+      "tier": "A",
+      "requested": 101,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no firmware/code in repo"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "1995",
+      "project_id": "49704",
+      "title": "Micromice lightning",
+      "submitted": "2026-10-03",
+      "repo": "https://github.com/alperenkko/Micromouse-Design-starter",
+      "demo": "18000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/49704",
+      "tier": "S",
+      "requested": 180,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM not a CSV in repo root (found BOM/BOM.csv)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2001",
+      "project_id": "50268",
+      "title": "spotify screen",
+      "submitted": "2026-10-03",
+      "repo": "https://github.com/istvankaszep-lgtm/spotify-screennew",
+      "demo": "8200",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/50268",
+      "tier": "A",
+      "requested": 82,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2009",
+      "project_id": "67563",
+      "title": "guitar pedal",
+      "submitted": "2026-10-04",
+      "repo": "https://github.com/BURNTcookiekoki/Guitar-Effects",
+      "demo": "15800",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/67563",
+      "tier": "S",
+      "requested": 158,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no firmware/code in repo"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2016",
+      "project_id": "25299",
+      "title": "5-Inch FPV Drone",
+      "submitted": "2026-10-04",
+      "repo": "https://github.com/AadityaK2212/5-Inch-FPV-Drone",
+      "demo": "40000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/25299",
+      "tier": "X",
+      "requested": 400,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM not a CSV in repo root (found BOM)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2023",
+      "project_id": "65761",
+      "title": "V-ARC (Violin Audio Regulation and Control",
+      "submitted": "2026-10-05",
+      "repo": "https://github.com/PendulumPower/V-Arc",
+      "demo": "15500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/65761",
+      "tier": "S",
+      "requested": 155,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2024",
+      "project_id": "65352",
+      "title": "Robot for fixing Ai factory's problems",
+      "submitted": "2026-10-05",
+      "repo": "https://github.com/alexnikogosyan57-star/Robot-for-fixing-Ai-factory-s-problems",
+      "demo": "2900",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/65352",
+      "tier": "A",
+      "requested": 29,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "README mentions a PCB but no PCB source/gerbers in repo",
+        "BOM not a CSV in repo root (found Files/Files/Building/BOM.xlsx)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2026",
+      "project_id": "52543",
+      "title": "Wireless Dice",
+      "submitted": "2026-10-05",
+      "repo": "https://github.com/PendulumPower/WirelessDice",
+      "demo": "20000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/52543",
+      "tier": "S",
+      "requested": 200,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM has no prices (USD)"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2027",
+      "project_id": "42792",
+      "title": "plantControl",
+      "submitted": "2026-10-05",
+      "repo": "https://github.com/K3ndev/plantcontrol",
+      "demo": "14000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/42792",
+      "tier": "S",
+      "requested": 140,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM has no purchase links"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2028",
+      "project_id": "52072",
+      "title": "diet coke fridge",
+      "submitted": "2026-10-05",
+      "repo": "https://github.com/kuratus89/mini-fridge",
+      "demo": "16000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/52072",
+      "tier": "S",
+      "requested": 160,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2031",
+      "project_id": "61978",
+      "title": "800 Feet Rocket!",
+      "submitted": "2026-10-06",
+      "repo": "https://github.com/Sh4rk-glitch/800-Feet-Rocket",
+      "demo": "20000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/61978",
+      "tier": "S",
+      "requested": 200,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo (only STL/3MF meshes)",
+        "no BOM (.csv in repo root)",
+        "README has no images (needs a screenshot of the full 3D model)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2032",
+      "project_id": "58600",
+      "title": "Athenaeum",
+      "submitted": "2026-10-06",
+      "repo": "https://github.com/AdityaJainDXB/Athenaeum",
+      "demo": "19000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/58600",
+      "tier": "S",
+      "requested": 190,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "BOM has no purchase links",
+        "README has no images (needs a screenshot of the full 3D model)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2033",
+      "project_id": "10218",
+      "title": "Customizable Macropad",
+      "submitted": "2026-10-06",
+      "repo": "https://github.com/Cunning077/HackPad",
+      "demo": "10000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/10218",
+      "tier": "A",
+      "requested": 100,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM has no purchase links"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2034",
+      "project_id": "67083",
+      "title": "ISS robot assistant",
+      "submitted": "2026-10-06",
+      "repo": "https://github.com/tornapart0/iss-assistant/",
+      "demo": "25000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/67083",
+      "tier": "X",
+      "requested": 250,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo (only STL/3MF meshes)",
+        "no BOM (.csv in repo root)",
+        "README is too thin (77 words): needs what it is, how it's used, why it was made"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2040",
+      "project_id": "24628",
+      "title": "AirPoint",
+      "submitted": "2026-10-06",
+      "repo": "https://github.com/sudipbandale2010-pixel/AirPoint-ESP32-Mouse",
+      "demo": "10000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/24628",
+      "tier": "A",
+      "requested": 100,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo (only STL/3MF meshes)"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2041",
+      "project_id": "65744",
+      "title": "LED Chaser",
+      "submitted": "2026-10-06",
+      "repo": "https://github.com/NivedhGovil/LED-Chaser",
+      "demo": "2200",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/65744",
+      "tier": "B",
+      "requested": 22,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2043",
+      "project_id": "63156",
+      "title": "Arcade",
+      "submitted": "2026-10-06",
+      "repo": "https://github.com/RishitJain-dev/Arcade",
+      "demo": "11000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/63156",
+      "tier": "A",
+      "requested": 110,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "README is too thin (55 words): needs what it is, how it's used, why it was made"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2045",
+      "project_id": "27514",
+      "title": "ROS 2 Radar-Rover",
+      "submitted": "2026-10-06",
+      "repo": "https://github.com/Nikhil1059/Radar-Rover",
+      "demo": "5500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/27514",
+      "tier": "A",
+      "requested": 55,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2046",
+      "project_id": "57495",
+      "title": "My first Linux PCB",
+      "submitted": "2026-10-06",
+      "repo": "https://github.com/The-INVINCIGUY/My-first-linux-PCB",
+      "demo": "6800",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/57495",
+      "tier": "A",
+      "requested": 68,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no firmware/code in repo",
+        "BOM has no purchase links"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2050",
+      "project_id": "57738",
+      "title": "My Cardy",
+      "submitted": "2026-10-06",
+      "repo": "https://github.com/insertnewusername/buisinesscardy/",
+      "demo": "2500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/57738",
+      "tier": "B",
+      "requested": 25,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "BOM has no purchase links"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2053",
+      "project_id": "43409",
+      "title": "The Tome of Boundless Knowledge",
+      "submitted": "2026-10-07",
+      "repo": "https://github.com/PendulumPower/TheTomeOfBoundlessKnowledge",
+      "demo": "18500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/43409",
+      "tier": "S",
+      "requested": 185,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2055",
+      "project_id": "56765",
+      "title": "Premium Fume Absorber",
+      "submitted": "2026-10-07",
+      "repo": "https://github.com/shivamvcx/Fume-Absorber",
+      "demo": "9000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/56765",
+      "tier": "A",
+      "requested": 90,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM not a CSV in repo root (found Docs/BOM.csv)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2056",
+      "project_id": "67218",
+      "title": "Phantom: Model Rocket",
+      "submitted": "2026-10-07",
+      "repo": "https://github.com/CoolMetalClaws/Phantom---Model-Rocket",
+      "demo": "12000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/67218",
+      "tier": "A",
+      "requested": 120,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2057",
+      "project_id": "49798",
+      "title": "TFCS-1",
+      "submitted": "2026-10-07",
+      "repo": "https://github.com/R1th1shwork/TFCS-1",
+      "demo": "14800",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/49798",
+      "tier": "S",
+      "requested": 148,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo"
+      ],
+      "warn": [
+        "README shows AI-writing signals (13 em dashes, table of contents, contributions are welcome); check by hand"
+      ]
+    },
+    {
+      "ship_id": "2058",
+      "project_id": "57564",
+      "title": "BOAT",
+      "submitted": "2026-10-07",
+      "repo": "https://github.com/VritoX098/RC-Boat",
+      "demo": "2000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/57564",
+      "tier": "B",
+      "requested": 20,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2059",
+      "project_id": "29416",
+      "title": "NeuroVox v2.0",
+      "submitted": "2026-10-07",
+      "repo": "https://github.com/Swapnil007-Curious/NeuroVox-v2.0",
+      "demo": "60000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/29416",
+      "tier": "X",
+      "requested": 600,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo (only STL/3MF meshes)",
+        "BOM not a CSV in repo root (found BOM AND CPL/NeuroVox v2.0 BOM.csv)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2061",
+      "project_id": "46468",
+      "title": "Satellite Drone Icarus v1",
+      "submitted": "2026-10-07",
+      "repo": "https://github.com/LeonOmo/Satellite-Drone-Icarus-v1",
+      "demo": "25500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/46468",
+      "tier": "X",
+      "requested": 255,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no firmware/code in repo"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2065",
+      "project_id": "66830",
+      "title": "Led Matrix Badge",
+      "submitted": "2026-10-07",
+      "repo": "https://github.com/Loml-1989/led_badge",
+      "demo": "2500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/66830",
+      "tier": "B",
+      "requested": 25,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "BOM has no purchase links",
+        "README has no images (needs a screenshot of the full 3D model)"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2067",
+      "project_id": "67680",
+      "title": "Chopsticks",
+      "submitted": "2026-10-07",
+      "repo": "https://github.com/wldd22/chopsticks/",
+      "demo": "1000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/67680",
+      "tier": "B",
+      "requested": 10,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2068",
+      "project_id": "45225",
+      "title": "CoreXY Snakes and Ladders Bot",
+      "submitted": "2026-10-07",
+      "repo": "https://github.com/KrishSanwal/Autonomous-Snakes-and-Ladders-Bot/",
+      "demo": "15800",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/45225",
+      "tier": "S",
+      "requested": 158,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "2070",
+      "project_id": "34237",
+      "title": "HAPPY PLANT",
+      "submitted": "2026-10-07",
+      "repo": "https://github.com/layerblayerplus-lgtm/happy-plant",
+      "demo": "15000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/34237",
+      "tier": "S",
+      "requested": 150,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2079",
+      "project_id": "68567",
+      "title": "Unimote",
+      "submitted": "2026-10-08",
+      "repo": "https://github.com/Loml-1989/unimote",
+      "demo": "2500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/68567",
+      "tier": "B",
+      "requested": 25,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "BOM has no purchase links",
+        "BOM has no prices (USD)",
+        "README has no images (needs a screenshot of the full 3D model)"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2080",
+      "project_id": "62327",
+      "title": "silly devboard",
+      "submitted": "2026-10-08",
+      "repo": "https://github.com/LawrnardKerman/devboard",
+      "demo": "8000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/62327",
+      "tier": "A",
+      "requested": 80,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no firmware/code in repo",
+        "BOM has no purchase links"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2081",
+      "project_id": "41780",
+      "title": "0.8KW DIY CNC",
+      "submitted": "2026-10-08",
+      "repo": "https://github.com/P0GGERSWAG/DIY-CNC",
+      "demo": "60000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/41780",
+      "tier": "X",
+      "requested": 600,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no firmware/code in repo"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2084",
+      "project_id": "65853",
+      "title": "Self-landing mini drone",
+      "submitted": "2026-10-08",
+      "repo": "https://github.com/itsasamiracle/Self-Landing-Tiny-Drone/",
+      "demo": "9600",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/65853",
+      "tier": "A",
+      "requested": 96,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2085",
+      "project_id": "54638",
+      "title": "neo-flymode",
+      "submitted": "2026-10-08",
+      "repo": "https://github.com/redwanknowshowtocode/neo-flymode",
+      "demo": "27400",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/54638",
+      "tier": "X",
+      "requested": 274,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2086",
+      "project_id": "51841",
+      "title": "Oxide Keys",
+      "submitted": "2026-10-08",
+      "repo": "https://github.com/ttdgp6b7sy-ai/oxide-keys",
+      "demo": "11500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/51841",
+      "tier": "A",
+      "requested": 115,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "2087",
+      "project_id": "67744",
+      "title": "A custom cybersecurity oriented cyberdeck.",
+      "submitted": "2026-10-09",
+      "repo": "https://github.com/SomebodyYouMayKnow/cyberdeck",
+      "demo": "15000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/67744",
+      "tier": "S",
+      "requested": 150,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "2088",
+      "project_id": "56073",
+      "title": "Hardware of CropSentry",
+      "submitted": "2026-10-09",
+      "repo": "https://github.com/CropSentry/Hardware",
+      "demo": "12000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/56073",
+      "tier": "A",
+      "requested": 120,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM not a CSV in repo root (found boms/.CSV_Files/CropSentry_Hardware_BOM_10-15-26_V4.csv)"
+      ],
+      "warn": [
+        "README shows AI-writing signals (16 emoji headings, 📌); check by hand"
+      ]
+    },
+    {
+      "ship_id": "2090",
+      "project_id": "68750",
+      "title": "Test",
+      "submitted": "2026-10-09",
+      "repo": "https://github.com/skyfallwastaken/timevoice",
+      "demo": "50000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/68750",
+      "tier": "X",
+      "requested": 500,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no BOM (.csv in repo root)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2091",
+      "project_id": "20417",
+      "title": "Hall Effect Mouse",
+      "submitted": "2026-10-09",
+      "repo": "https://github.com/qtogal/hall-effect-mousepad",
+      "demo": "8000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/20417",
+      "tier": "S",
+      "requested": 80,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no BOM (.csv in repo root)",
+        "README is too thin (78 words): needs what it is, how it's used, why it was made"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2094",
+      "project_id": "51129",
+      "title": "Silverflame - TVC propulsively landing rocket",
+      "submitted": "2026-10-10",
+      "repo": "https://github.com/CloudStas/Propulsively-Landing-Model-Rocket",
+      "demo": "60000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/51129",
+      "tier": "X",
+      "requested": 600,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2096",
+      "project_id": "25234",
+      "title": "HAND GESTURE CONTROLLED MOUSE",
+      "submitted": "2026-10-10",
+      "repo": "https://github.com/swaranshkumar127-art/HAND-GESTURE-CONTROLLED-MOUSE",
+      "demo": "2300",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/25234",
+      "tier": "B",
+      "requested": 23,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no firmware/code in repo",
+        "no BOM (.csv in repo root)",
+        "README has no images (needs a screenshot of the full 3D model)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2099",
+      "project_id": "63790",
+      "title": "nfc card keychain",
+      "submitted": "2026-10-10",
+      "repo": "https://github.com/HardCoreTools/Blinking-eye-keychain-with-NFC",
+      "demo": "4500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/63790",
+      "tier": "A",
+      "requested": 45,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "BOM not a CSV in repo root (found pcb/BOM_keychain.xlsx)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2100",
+      "project_id": "58086",
+      "title": "2 wheeled emergency robot",
+      "submitted": "2026-10-10",
+      "repo": "https://github.com/emmanuelnkangolo319-hash/2wd-controlled-robot-",
+      "demo": "20000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/58086",
+      "tier": "S",
+      "requested": 200,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2101",
+      "project_id": "62132",
+      "title": "Hermes",
+      "submitted": "2026-10-10",
+      "repo": "https://github.com/nsreeni07/Hermes",
+      "demo": "60000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/62132",
+      "tier": "X",
+      "requested": 600,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no firmware/code in repo",
+        "BOM not a CSV in repo root (found BOM/Hermes BOM - Sheet1.csv)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2102",
+      "project_id": "59190",
+      "title": "Hydro cooler for laptop/pc",
+      "submitted": "2026-10-10",
+      "repo": "https://github.com/THECOOKERINTECH/Hydro-cooler-for-laptop-PC/blob/main/README.md",
+      "demo": "43000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/59190",
+      "tier": "X",
+      "requested": 430,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "BOM not a CSV in repo root (found bom/bom.csv)",
+        "README is too thin (8 words): needs what it is, how it's used, why it was made",
+        "README has no images (needs a screenshot of the full 3D model)"
+      ],
+      "warn": [
+        "repo URL points to a file/folder, not the repo root"
+      ]
+    },
+    {
+      "ship_id": "2103",
+      "project_id": "62196",
+      "title": "NFC business card",
+      "submitted": "2026-10-10",
+      "repo": "https://github.com/RishitJain-dev/NFC-Business-Card",
+      "demo": "2500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/62196",
+      "tier": "B",
+      "requested": 25,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "README mentions a PCB but no PCB source/gerbers in repo"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2105",
+      "project_id": "27654",
+      "title": "MadHex hexapod",
+      "submitted": "2026-10-10",
+      "repo": "https://github.com/DEFOR111/MADHEX-v2",
+      "demo": "42000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/27654",
+      "tier": "X",
+      "requested": 420,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "README shows AI-writing signals (15 em dashes, key features); check by hand"
+      ]
+    },
+    {
+      "ship_id": "2111",
+      "project_id": "23707",
+      "title": "Smart Plant Waterer",
+      "submitted": "2026-10-11",
+      "repo": "https://github.com/susdani810-boop/Smart-Solar-Plant-Waterer",
+      "demo": "10000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/23707",
+      "tier": "A",
+      "requested": 100,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no firmware/code in repo"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2112",
+      "project_id": "69117",
+      "title": "Ambient ARGB",
+      "submitted": "2026-10-11",
+      "repo": "https://github.com/Raj77502/Ambient-ARGB",
+      "demo": "3500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/69117",
+      "tier": "A",
+      "requested": 35,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no firmware/code in repo",
+        "BOM not a CSV in repo root (found BOM.md)",
+        "README has no images (needs a screenshot of the full 3D model)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2113",
+      "project_id": "40963",
+      "title": "LUX ONE",
+      "submitted": "2026-10-11",
+      "repo": "https://github.com/sntxxd/LUX-ONE",
+      "demo": "19000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/40963",
+      "tier": "S",
+      "requested": 190,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "README mentions a PCB but no PCB source/gerbers in repo"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2117",
+      "project_id": "69153",
+      "title": "Walkie talkies",
+      "submitted": "2026-10-11",
+      "repo": "https://github.com/The-INVINCIGUY/First-Radio",
+      "demo": "10100",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/69153",
+      "tier": "A",
+      "requested": 101,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no firmware/code in repo",
+        "BOM has no purchase links",
+        "BOM has no prices (USD)"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2120",
+      "project_id": "42648",
+      "title": "PAL",
+      "submitted": "2026-10-11",
+      "repo": "https://github.com/luklab63/PAL-cube",
+      "demo": "2500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/42648",
+      "tier": "B",
+      "requested": 25,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no BOM (.csv in repo root)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2126",
+      "project_id": "66687",
+      "title": "Aibot",
+      "submitted": "2026-10-12",
+      "repo": "https://github.com/saishreyansh28-ux/Aibot",
+      "demo": "2000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/66687",
+      "tier": "B",
+      "requested": 20,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "README is too thin (77 words): needs what it is, how it's used, why it was made",
+        "README has no images (needs a screenshot of the full 3D model)"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2128",
+      "project_id": "66132",
+      "title": "Chromebook Batocera PC Case",
+      "submitted": "2026-10-12",
+      "repo": "https://github.com/Vulcan43/PC-Case",
+      "demo": "4800",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/66132",
+      "tier": "A",
+      "requested": 48,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM price column looks empty",
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2130",
+      "project_id": "55927",
+      "title": "Controlled prosthetic hand",
+      "submitted": "2026-10-12",
+      "repo": "https://github.com/emmanuelnkangolo319-hash/controlled-prosthetic",
+      "demo": "40000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/55927",
+      "tier": "X",
+      "requested": 400,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no firmware/code in repo",
+        "BOM has no purchase links",
+        "BOM has no prices (USD)"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2136",
+      "project_id": "67421",
+      "title": "EN.FO",
+      "submitted": "2026-10-13",
+      "repo": "https://github.com/makrcat/outdoorsy-gadget",
+      "demo": "12000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/67421",
+      "tier": "A",
+      "requested": 120,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "2138",
+      "project_id": "53662",
+      "title": "Dynamic bike lights",
+      "submitted": "2026-10-13",
+      "repo": "https://github.com/emdcomputer-crypto/Automatic-bike-light",
+      "demo": "10000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/53662",
+      "tier": "A",
+      "requested": 100,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM not a CSV in repo root (found BOM.md)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2140",
+      "project_id": "32034",
+      "title": "Nova Mirror",
+      "submitted": "2026-10-13",
+      "repo": "https://github.com/JTech3D/Nova-Mirror",
+      "demo": "25500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/32034",
+      "tier": "X",
+      "requested": 255,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM not a CSV in repo root (found readme_assets/bom.csv)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2141",
+      "project_id": "53812",
+      "title": "OpenVision",
+      "submitted": "2026-10-13",
+      "repo": "https://github.com/Raj77502/OpenVision",
+      "demo": "60000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/53812",
+      "tier": "X",
+      "requested": 600,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no firmware/code in repo"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2143",
+      "project_id": "68630",
+      "title": "Raspberry bay",
+      "submitted": "2026-10-13",
+      "repo": "https://github.com/tanuki-dot/raspberry-bay",
+      "demo": "2500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/68630",
+      "tier": "B",
+      "requested": 25,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo (only CAD source, no STEP)",
+        "no firmware/code in repo",
+        "no BOM (.csv in repo root)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2146",
+      "project_id": "55244",
+      "title": "CNC (jank edition)",
+      "submitted": "2026-10-13",
+      "repo": "https://github.com/FormulaCarbon/ScrapNC",
+      "demo": "35000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/55244",
+      "tier": "X",
+      "requested": 350,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no firmware/code in repo"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2148",
+      "project_id": "61301",
+      "title": "Velo - The Modern Gameboy",
+      "submitted": "2026-10-14",
+      "repo": "https://github.com/RishitJain-dev/Gameboy-Velo",
+      "demo": "7600",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/61301",
+      "tier": "A",
+      "requested": 76,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2151",
+      "project_id": "69335",
+      "title": "Water this Plant",
+      "submitted": "2026-10-14",
+      "repo": "https://github.com/LeonOmo/Water-this-Plant-",
+      "demo": "2500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/69335",
+      "tier": "B",
+      "requested": 25,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "README mentions a PCB but no PCB source/gerbers in repo"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2154",
+      "project_id": "44865",
+      "title": "Meshtastic node",
+      "submitted": "2026-10-15",
+      "repo": "https://github.com/kyrg4z/custom-meshtastic-node",
+      "demo": "20000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/44865",
+      "tier": "S",
+      "requested": 200,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2161",
+      "project_id": "43548",
+      "title": "Cheesebox",
+      "submitted": "2026-10-16",
+      "repo": "https://github.com/CHeesee69/Cheesedeck",
+      "demo": "34000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/43548",
+      "tier": "X",
+      "requested": 340,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no firmware/code in repo"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2164",
+      "project_id": "29376",
+      "title": "Flipper Echo",
+      "submitted": "2026-10-16",
+      "repo": "https://github.com/thagreatjoel/FlipperEcho",
+      "demo": "4200",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/29376",
+      "tier": "A",
+      "requested": 42,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no BOM (.csv in repo root)",
+        "README is too thin (1 words): needs what it is, how it's used, why it was made",
+        "README has no images (needs a screenshot of the full 3D model)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2165",
+      "project_id": "58732",
+      "title": "Novex - AI Drone Swarm",
+      "submitted": "2026-10-16",
+      "repo": "https://github.com/xisolatedev/Novex",
+      "demo": "17500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/58732",
+      "tier": "S",
+      "requested": 175,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "GitHub repo unreachable: repo not found or private"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2166",
+      "project_id": "61194",
+      "title": "RaceESC",
+      "submitted": "2026-10-17",
+      "repo": "https://github.com/Boefy/RaceESC",
+      "demo": "30300",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/61194",
+      "tier": "X",
+      "requested": 303,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "README mentions a PCB but no PCB source/gerbers in repo",
+        "no firmware/code in repo",
+        "BOM not a CSV in repo root (found RaceESC/BOM.csv)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2173",
+      "project_id": "53160",
+      "title": "Robotic Arm",
+      "submitted": "2026-10-17",
+      "repo": "https://github.com/AaravSareen/robo",
+      "demo": "2000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/53160",
+      "tier": "B",
+      "requested": 20,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no BOM (.csv in repo root)",
+        "README is too thin (11 words): needs what it is, how it's used, why it was made",
+        "README has no images (needs a screenshot of the full 3D model)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2177",
+      "project_id": "51772",
+      "title": "Parallel Plate DriveTrain",
+      "submitted": "2026-10-18",
+      "repo": "https://github.com/PhoenixForceFTC/BioBuzz10100",
+      "demo": "60000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/51772",
+      "tier": "X",
+      "requested": 600,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "BOM has no purchase links",
+        "README has no images (needs a screenshot of the full 3D model)"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2188",
+      "project_id": "70434",
+      "title": "MelodyPad",
+      "submitted": "2026-10-19",
+      "repo": "https://github.com/aagam3023-lab/MelodyPad",
+      "demo": "2500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/70434",
+      "tier": "B",
+      "requested": 25,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no BOM (.csv in repo root)",
+        "README is too thin (10 words): needs what it is, how it's used, why it was made",
+        "README has no images (needs a screenshot of the full 3D model)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2189",
+      "project_id": "41270",
+      "title": "RC Rover Platform",
+      "submitted": "2026-10-20",
+      "repo": "https://github.com/SahanaDil/RCRoverV1",
+      "demo": "7800",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/41270",
+      "tier": "A",
+      "requested": 78,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2193",
+      "project_id": "19230",
+      "title": "20% Cooler KEYBOARD",
+      "submitted": "2026-10-20",
+      "repo": "https://github.com/Mattiplex/RAINBOW-DASH-Keyboard-",
+      "demo": "29000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/19230",
+      "tier": "X",
+      "requested": 290,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM has no purchase links"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2195",
+      "project_id": "29722",
+      "title": "Pikne",
+      "submitted": "2026-10-20",
+      "repo": "https://github.com/marksdude/Modular-Power-Bank",
+      "demo": "19100",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/29722",
+      "tier": "S",
+      "requested": 191,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2197",
+      "project_id": "47079",
+      "title": "agribot",
+      "submitted": "2026-10-20",
+      "repo": "https://github.com/Maleksameh61/Agribot",
+      "demo": "15000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/47079",
+      "tier": "S",
+      "requested": 150,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "2198",
+      "project_id": "69806",
+      "title": "Synth",
+      "submitted": "2026-10-21",
+      "repo": "https://github.com/Himikle09/Synth-Pocketchord",
+      "demo": "8800",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/69806",
+      "tier": "A",
+      "requested": 88,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no firmware/code in repo",
+        "no BOM (.csv in repo root)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2199",
+      "project_id": "26822",
+      "title": "The Delarion",
+      "submitted": "2026-10-21",
+      "repo": "https://github.com/Kishna-Jain/Delarion",
+      "demo": "50000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/26822",
+      "tier": "X",
+      "requested": 500,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2202",
+      "project_id": "30695",
+      "title": "DraftONE",
+      "submitted": "2026-10-21",
+      "repo": "https://github.com/icewtr/DraftONE",
+      "demo": "59800",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/30695",
+      "tier": "X",
+      "requested": 598,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2209",
+      "project_id": "45187",
+      "title": "HV transformer driver",
+      "submitted": "2026-10-22",
+      "repo": "https://github.com/Operationorange01/Flyback-Driver",
+      "demo": "13500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/45187",
+      "tier": "S",
+      "requested": 135,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "2210",
+      "project_id": "70066",
+      "title": "doomsday cyberdeck",
+      "submitted": "2026-10-22",
+      "repo": "https://github.com/akanbi01abolomope-cyber/doomsday-cyber-deck-v2",
+      "demo": "60000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/70066",
+      "tier": "X",
+      "requested": 600,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no firmware/code in repo",
+        "BOM has no purchase links",
+        "README has no images (needs a screenshot of the full 3D model)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2221",
+      "project_id": "70834",
+      "title": "flightime",
+      "submitted": "2026-10-22",
+      "repo": "https://github.com/RishitJain-dev/Flightime",
+      "demo": "22500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/70834",
+      "tier": "X",
+      "requested": 225,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2222",
+      "project_id": "70101",
+      "title": "Water this Plant! v2",
+      "submitted": "2026-10-22",
+      "repo": "https://github.com/LeonOmo/Water-this-Plant-v2",
+      "demo": "2500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/70101",
+      "tier": "B",
+      "requested": 25,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "2223",
+      "project_id": "69796",
+      "title": "Obliterator - Antweight Battle Bot",
+      "submitted": "2026-10-22",
+      "repo": "https://github.com/CoolMetalClaws/Obliterator-Antweight-Battle-bot",
+      "demo": "20000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/69796",
+      "tier": "S",
+      "requested": 200,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "2229",
+      "project_id": "68871",
+      "title": "Simple Flight Controller",
+      "submitted": "2026-10-23",
+      "repo": "https://github.com/YakshithK/SimpleFlightController",
+      "demo": "20000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/68871",
+      "tier": "S",
+      "requested": 200,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM not a CSV in repo root (found hardware/production/bom.csv)",
+        "no README.md"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2237",
+      "project_id": "56615",
+      "title": "Simple Hackpad!",
+      "submitted": "2026-10-24",
+      "repo": "https://github.com/junpark527-hash/v-hackpad",
+      "demo": "2500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/56615",
+      "tier": "B",
+      "requested": 25,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no firmware/code in repo",
+        "no BOM (.csv in repo root)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2252",
+      "project_id": "45515",
+      "title": "Atlas: A Cargo Plane",
+      "submitted": "2026-10-25",
+      "repo": "https://github.com/qaimkhaniarzan-hub/Atlas",
+      "demo": "49600",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/45515",
+      "tier": "X",
+      "requested": 496,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM not a CSV in repo root (found Atlas/BOM.csv)",
+        "README has no images (needs a screenshot of the full 3D model)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2255",
+      "project_id": "69521",
+      "title": "Basic Page Turner",
+      "submitted": "2026-10-25",
+      "repo": "https://github.com/PendulumPower/SimplePageTurner",
+      "demo": "3000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/69521",
+      "tier": "A",
+      "requested": 30,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2257",
+      "project_id": "43031",
+      "title": "4-paw-robot-intelligent",
+      "submitted": "2026-10-25",
+      "repo": "https://github.com/ysxaybarroso-ux/my-first-hardware-robot-yaya",
+      "demo": "60000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/43031",
+      "tier": "X",
+      "requested": 600,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM not a CSV in repo root (found robot-piece-need/BOM.csv)",
+        "README has 1 image; with a PCB it needs both the 3D model and a PCB screenshot"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2258",
+      "project_id": "64874",
+      "title": "Mp3 player",
+      "submitted": "2026-10-25",
+      "repo": "https://github.com/Nikolaossamaras/Mp3-player",
+      "demo": "4000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/64874",
+      "tier": "A",
+      "requested": 40,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM not a CSV in repo root (found BOM/mp3_player.csv)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2264",
+      "project_id": "46662",
+      "title": "S3DUCKY",
+      "submitted": "2026-10-26",
+      "repo": "https://github.com/himanivishwa/S3DUCKY",
+      "demo": "2000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/46662",
+      "tier": "B",
+      "requested": 20,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "BOM not a CSV in repo root (found BOM/BOMS3DUCKY.csv)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2265",
+      "project_id": "64579",
+      "title": "Spark Gap Flyback-Driver",
+      "submitted": "2026-10-26",
+      "repo": "https://github.com/alperenkko/zvs-flyback-sgtc-circuit",
+      "demo": "7500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/64579",
+      "tier": "A",
+      "requested": 75,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2279",
+      "project_id": "68878",
+      "title": "Starbie",
+      "submitted": "2026-10-28",
+      "repo": "https://github.com/Benjaminsjlewis/Starbie/blob/main/README.md",
+      "demo": "2800",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/68878",
+      "tier": "A",
+      "requested": 28,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost",
+        "repo URL points to a file/folder, not the repo root"
+      ]
+    },
+    {
+      "ship_id": "2282",
+      "project_id": "45483",
+      "title": "Poc-mp3",
+      "submitted": "2026-10-28",
+      "repo": "https://github.com/thaimin01/Poc.mp3",
+      "demo": "16000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/45483",
+      "tier": "S",
+      "requested": 160,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no firmware/code in repo"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2283",
+      "project_id": "12197",
+      "title": "Cheapest Possible Smart Chess Board",
+      "submitted": "2026-10-28",
+      "repo": "https://github.com/chikaskas/smart_chess_board",
+      "demo": "2500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/12197",
+      "tier": "B",
+      "requested": 25,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2286",
+      "project_id": "61836",
+      "title": "analog overdrive guitar pedal",
+      "submitted": "2026-10-28",
+      "repo": "https://github.com/elia-pia/Analog-multieffect-guitar-pedal",
+      "demo": "5000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/61836",
+      "tier": "A",
+      "requested": 50,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM not a CSV in repo root (found production/BOM.csv)",
+        "README has 1 image; with a PCB it needs both the 3D model and a PCB screenshot"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2288",
+      "project_id": "22328",
+      "title": "HEXAPOD/SPIDER ROBOT 2.O",
+      "submitted": "2026-10-28",
+      "repo": "https://github.com/vedaprotoshredhq/A-HEXAPOD-SPIDER-ROBOT-2.O",
+      "demo": "55100",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/22328",
+      "tier": "X",
+      "requested": 551,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM not a CSV in repo root (found BOM)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2294",
+      "project_id": "24830",
+      "title": "Rivet, a BDX Droid",
+      "submitted": "2026-10-29",
+      "repo": "https://github.com/InTheRiches/Rivet",
+      "demo": "100",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/24830",
+      "tier": "B",
+      "requested": 1,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM has no purchase links"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2299",
+      "project_id": "70870",
+      "title": "Ducky",
+      "submitted": "2026-10-29",
+      "repo": "https://github.com/Romanhery/Ducky",
+      "demo": "2600",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/70870",
+      "tier": "A",
+      "requested": 26,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM not a CSV in repo root (found Production/BOM.csv)",
+        "README is too thin (58 words): needs what it is, how it's used, why it was made"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2302",
+      "project_id": "50630",
+      "title": "A.P.O.G.E.E (Avionics Board PCB)",
+      "submitted": "2026-10-29",
+      "repo": "https://github.com/LinesOCode/A.P.O.G.E.E-Avionics-Board",
+      "demo": "30000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/50630",
+      "tier": "X",
+      "requested": 300,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "2312",
+      "project_id": "71549",
+      "title": "PulsePad",
+      "submitted": "2026-10-29",
+      "repo": "https://github.com/ericthedude/PulsePad_1",
+      "demo": "2500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/71549",
+      "tier": "B",
+      "requested": 25,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no BOM (.csv in repo root)",
+        "README is too thin (76 words): needs what it is, how it's used, why it was made",
+        "README has no images (needs a screenshot of the full 3D model)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2313",
+      "project_id": "71915",
+      "title": "SmartTap",
+      "submitted": "2026-10-29",
+      "repo": "https://github.com/birbh/SmartTap",
+      "demo": "4800",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/71915",
+      "tier": "A",
+      "requested": 48,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "2316",
+      "project_id": "55946",
+      "title": "Home Assistant Dashboard",
+      "submitted": "2026-10-29",
+      "repo": "https://github.com/Djayden-R/Home-Assistant-Dashboard",
+      "demo": "2500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/55946",
+      "tier": "B",
+      "requested": 25,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "2318",
+      "project_id": "70388",
+      "title": "5-Axis 3D-Printer",
+      "submitted": "2026-10-29",
+      "repo": "https://github.com/UnfadingSoul97/5-Axis-3D-Printer",
+      "demo": "60000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/70388",
+      "tier": "X",
+      "requested": 600,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo (only STL/3MF meshes)",
+        "no firmware/code in repo",
+        "BOM has no purchase links"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2319",
+      "project_id": "17556",
+      "title": "2ch VESC Board",
+      "submitted": "2026-10-29",
+      "repo": "https://github.com/Tomas-Kuchta-FPV/VESC6_OPEN_HARDWARE",
+      "demo": "20000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/17556",
+      "tier": "S",
+      "requested": 200,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "2324",
+      "project_id": "71551",
+      "title": "General Automatic Chemical Reactor",
+      "submitted": "2026-10-29",
+      "repo": "https://github.com/whosthedoctor/Open-Source-Chemical-Reactor",
+      "demo": "60000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/71551",
+      "tier": "X",
+      "requested": 600,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "2325",
+      "project_id": "21019",
+      "title": "Self driving car",
+      "submitted": "2026-10-29",
+      "repo": "https://github.com/Matei2010/CrazyCar_Prototype_-IN_DEVELOPMENT-",
+      "demo": "7000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/21019",
+      "tier": "A",
+      "requested": 70,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no firmware/code in repo"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost",
+        "README shows AI-writing signals (8 em dashes, table of contents, future improvements); check by hand"
+      ]
+    },
+    {
+      "ship_id": "2327",
+      "project_id": "63913",
+      "title": "ESP LED Driver",
+      "submitted": "2026-10-29",
+      "repo": "https://github.com/OakTreeWC/ESPLEDDriver-v1.0",
+      "demo": "5500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/63913",
+      "tier": "A",
+      "requested": 55,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no firmware/code in repo"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2328",
+      "project_id": "71958",
+      "title": "Waterproof Drone",
+      "submitted": "2026-10-29",
+      "repo": "https://github.com/whosthedoctor/Waterproofing-a-Drone-for-Stardance",
+      "demo": "9000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/71958",
+      "tier": "A",
+      "requested": 90,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no BOM (.csv in repo root)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2335",
+      "project_id": "50665",
+      "title": "Hermes Vision",
+      "submitted": "2026-10-30",
+      "repo": "https://github.com/rayyanfaiq/Hermes-Vision",
+      "demo": "18500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/50665",
+      "tier": "S",
+      "requested": 185,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no firmware/code in repo",
+        "README has 1 image; with a PCB it needs both the 3D model and a PCB screenshot"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2336",
+      "project_id": "52154",
+      "title": "Custom TKL Mechanical Keyboard",
+      "submitted": "2026-10-30",
+      "repo": "https://github.com/supersoimon/big-keyboard",
+      "demo": "12000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/52154",
+      "tier": "A",
+      "requested": 120,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "2338",
+      "project_id": "61846",
+      "title": "ArduCore — My Own Arduino Board",
+      "submitted": "2026-10-30",
+      "repo": "https://github.com/urjadoshi2024etc-creator/ArduCore-Custom-Arduino-Board",
+      "demo": "1900",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/61846",
+      "tier": "B",
+      "requested": 19,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no firmware/code in repo",
+        "BOM not a CSV in repo root (found production/bom/ArduCore.csv)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2340",
+      "project_id": "39648",
+      "title": "MP3 + Tamagotchi",
+      "submitted": "2026-10-30",
+      "repo": "https://github.com/rabbaniputrowi-alt/Mp3-player-Tamagothci-Companion",
+      "demo": "8800",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/39648",
+      "tier": "A",
+      "requested": 88,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "2341",
+      "project_id": "45310",
+      "title": "Project Holocron",
+      "submitted": "2026-10-30",
+      "repo": "https://github.com/Kxrtik13-A19/Project-Holocron",
+      "demo": "58500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/45310",
+      "tier": "X",
+      "requested": 585,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "README mentions a PCB but no PCB source/gerbers in repo",
+        "no firmware/code in repo",
+        "no BOM (.csv in repo root)"
+      ],
+      "warn": [
+        "README shows AI-writing signals (12 emoji headings, 📌); check by hand"
+      ]
+    },
+    {
+      "ship_id": "2344",
+      "project_id": "55458",
+      "title": "Mariboard",
+      "submitted": "2026-10-30",
+      "repo": "https://github.com/Nikolaossamaras/marinboard",
+      "demo": "12000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/55458",
+      "tier": "A",
+      "requested": 120,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM not a CSV in repo root (found BOM/BOM.csv)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2349",
+      "project_id": "72115",
+      "title": "Vasko-usb-hub",
+      "submitted": "2026-10-30",
+      "repo": "https://github.com/vask3/vasko-usb-hub",
+      "demo": "10000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/72115",
+      "tier": "A",
+      "requested": 100,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no BOM (.csv in repo root)",
+        "README has 1 image; with a PCB it needs both the 3D model and a PCB screenshot"
+      ],
+      "warn": [
+        "README shows AI-writing signals (4 emoji headings, 📌); check by hand"
+      ]
+    },
+    {
+      "ship_id": "2353",
+      "project_id": "55085",
+      "title": "Tidal-keys",
+      "submitted": "2026-10-30",
+      "repo": "https://github.com/ElGOATFilipino/TIDAL-KEYS",
+      "demo": "19500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/55085",
+      "tier": "S",
+      "requested": 195,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "2359",
+      "project_id": "51645",
+      "title": "flight computer",
+      "submitted": "2026-10-30",
+      "repo": "https://github.com/buikemiyke-cell/Flight-computer",
+      "demo": "15000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/51645",
+      "tier": "S",
+      "requested": 150,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no firmware/code in repo",
+        "no BOM (.csv in repo root)",
+        "README is too thin (30 words): needs what it is, how it's used, why it was made",
+        "README has 1 image; with a PCB it needs both the 3D model and a PCB screenshot"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2361",
+      "project_id": "62200",
+      "title": "Locate - GPS tracker",
+      "submitted": "2026-10-31",
+      "repo": "https://github.com/RishitJain-dev/Locate",
+      "demo": "3100",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/62200",
+      "tier": "A",
+      "requested": 31,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no firmware/code in repo",
+        "README is too thin (16 words): needs what it is, how it's used, why it was made"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2362",
+      "project_id": "51177",
+      "title": "8bit computer",
+      "submitted": "2026-10-31",
+      "repo": "https://github.com/Haxintosh/8bit",
+      "demo": "15000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/51177",
+      "tier": "S",
+      "requested": 150,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2363",
+      "project_id": "31038",
+      "title": "HeartSense",
+      "submitted": "2026-10-31",
+      "repo": "https://github.com/rabidkoala25/HeartSense",
+      "demo": "12000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/31038",
+      "tier": "A",
+      "requested": 120,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "2364",
+      "project_id": "45265",
+      "title": "(TVC) Rocket",
+      "submitted": "2026-10-31",
+      "repo": "https://github.com/Pingu207/ROCKET",
+      "demo": "60000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/45265",
+      "tier": "X",
+      "requested": 600,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM not a CSV in repo root (found CAD/Hardware_BOM)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2367",
+      "project_id": "48781",
+      "title": "toomanyparts",
+      "submitted": "2026-10-31",
+      "repo": "https://github.com/chinh4/toomanyparts",
+      "demo": "41500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/48781",
+      "tier": "X",
+      "requested": 415,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no firmware/code in repo"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2371",
+      "project_id": "46631",
+      "title": "KeeBord",
+      "submitted": "2026-10-31",
+      "repo": "https://github.com/qaimkhaniarzan-hub/KeeBord",
+      "demo": "4500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/46631",
+      "tier": "A",
+      "requested": 45,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM has no purchase links",
+        "README has 1 image; with a PCB it needs both the 3D model and a PCB screenshot"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2373",
+      "project_id": "44209",
+      "title": "Mechanics",
+      "submitted": "2026-10-31",
+      "repo": "https://github.com/Serwindev/Mechanics",
+      "demo": "1000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/44209",
+      "tier": "B",
+      "requested": 10,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo (only STL/3MF meshes)",
+        "no BOM (.csv in repo root)",
+        "README has no images (needs a screenshot of the full 3D model)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2377",
+      "project_id": "57325",
+      "title": "High Power Rocket Flight Computer And Groundstation",
+      "submitted": "2026-10-31",
+      "repo": "https://github.com/1kvihaan-lab/flight-computer",
+      "demo": "30000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/57325",
+      "tier": "X",
+      "requested": 300,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no BOM (.csv in repo root)",
+        "README is too thin (12 words): needs what it is, how it's used, why it was made",
+        "README has no images (needs a screenshot of the full 3D model)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2379",
+      "project_id": "42098",
+      "title": "DMX Console",
+      "submitted": "2026-10-31",
+      "repo": "https://github.com/KiloanTV/DMX-Console",
+      "demo": "42200",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/42098",
+      "tier": "X",
+      "requested": 422,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2381",
+      "project_id": "46730",
+      "title": "Perigee 3D Printer",
+      "submitted": "2026-10-31",
+      "repo": "https://github.com/reyanshtyagi12-source/Umbris-3D-Printer",
+      "demo": "60000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/46730",
+      "tier": "X",
+      "requested": 600,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no firmware/code in repo"
+      ],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2382",
+      "project_id": "59963",
+      "title": "Wind Tunnel",
+      "submitted": "2026-10-31",
+      "repo": "https://github.com/shivamvcx/Wind-Tunnel",
+      "demo": "9800",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/59963",
+      "tier": "A",
+      "requested": 98,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "BOM not a CSV in repo root (found Docs/BOM.csv)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2386",
+      "project_id": "71077",
+      "title": "Cyber- Swiss Knife_V1",
+      "submitted": "2026-10-31",
+      "repo": "https://github.com/alperenkko/Cyber-Swiss-Knife",
+      "demo": "9300",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/71077",
+      "tier": "A",
+      "requested": 93,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2387",
+      "project_id": "67081",
+      "title": "Senweget",
+      "submitted": "2026-10-31",
+      "repo": "https://github.com/UnfadingSoul97/Senweget",
+      "demo": "12000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/67081",
+      "tier": "A",
+      "requested": 120,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no BOM (.csv in repo root)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2390",
+      "project_id": "56993",
+      "title": "Radio Survey Drone",
+      "submitted": "2026-10-31",
+      "repo": "https://github.com/Damelhasen/OpenPTN",
+      "demo": "17000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/56993",
+      "tier": "S",
+      "requested": 170,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost",
+        "same repo is also in the queue as project #47614 (possible duplicate ship)"
+      ]
+    },
+    {
+      "ship_id": "2392",
+      "project_id": "70495",
+      "title": "Haven Nottingham Badges",
+      "submitted": "2026-10-31",
+      "repo": "https://github.com/Choc0latesauce/Haven-Nottingham-Badge",
+      "demo": "100",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/70495",
+      "tier": "B",
+      "requested": 1,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no BOM (.csv in repo root)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2394",
+      "project_id": "46859",
+      "title": "picker placerblob:https://stardance.hackclub.com/5afedd5a-b2ca-4254-bf11-ed8fe1ffd07c",
+      "submitted": "2026-10-31",
+      "repo": "https://github.com/C182R/3DOF-Picker-Placer",
+      "demo": "47500",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/46859",
+      "tier": "X",
+      "requested": 475,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": []
+    },
+    {
+      "ship_id": "2395",
+      "project_id": "47614",
+      "title": "Radio Survey Drone",
+      "submitted": "2026-10-31",
+      "repo": "https://github.com/Damelhasen/OpenPTN",
+      "demo": "17000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/47614",
+      "tier": "S",
+      "requested": 170,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost",
+        "same repo is also in the queue as project #56993 (possible duplicate ship)"
+      ]
+    },
+    {
+      "ship_id": "2396",
+      "project_id": "37343",
+      "title": "StarWatlz Steno Keyboard",
+      "submitted": "2026-11-01",
+      "repo": "https://github.com/JDARIMAN/StarWatlz-Steno-Keyboard",
+      "demo": "9000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/37343",
+      "tier": "A",
+      "requested": 90,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2399",
+      "project_id": "63945",
+      "title": "Velocity Deck",
+      "submitted": "2026-11-01",
+      "repo": "https://github.com/hersheybar-cloud/Velocity_Deck",
+      "demo": "5000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/63945",
+      "tier": "A",
+      "requested": 50,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no firmware/code in repo",
+        "no BOM (.csv in repo root)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2403",
+      "project_id": "69276",
+      "title": "80 % ANSI keyboard",
+      "submitted": "2026-11-01",
+      "repo": "https://github.com/thaimin01/80-ANSI-keyboard",
+      "demo": "12000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/69276",
+      "tier": "A",
+      "requested": 120,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no BOM (.csv in repo root)",
+        "README is too thin (20 words): needs what it is, how it's used, why it was made",
+        "README has no images (needs a screenshot of the full 3D model)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2407",
+      "project_id": "3382",
+      "title": "Advanced Weather Station",
+      "submitted": "2026-11-01",
+      "repo": "https://github.com/CircuitCyborg/Advanced-Weather-Station",
+      "demo": "15000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/3382",
+      "tier": "S",
+      "requested": 150,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    },
+    {
+      "ship_id": "2409",
+      "project_id": "72352",
+      "title": "RingPad",
+      "submitted": "2026-11-01",
+      "repo": "https://github.com/youyuisef/RingPad",
+      "demo": "45000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/72352",
+      "tier": "X",
+      "requested": 450,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no BOM (.csv in repo root)",
+        "README has no images (needs a screenshot of the full 3D model)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2413",
+      "project_id": "66495",
+      "title": "STM32F407 Dev Kit",
+      "submitted": "2026-11-01",
+      "repo": "https://github.com/Vibhors-Tech-Hub/STM32F407-Dev-Kit",
+      "demo": "25000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/66495",
+      "tier": "X",
+      "requested": 250,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no firmware/code in repo",
+        "BOM not a CSV in repo root (found production/BOM.csv)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2414",
+      "project_id": "22304",
+      "title": "A hexapod robot/spider robot",
+      "submitted": "2026-11-01",
+      "repo": "https://github.com/vedaprotoshredhq/Hexapod-robot",
+      "demo": "5000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/22304",
+      "tier": "A",
+      "requested": 50,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo (only CAD source, no STEP)",
+        "no firmware/code in repo",
+        "no BOM (.csv in repo root)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2415",
+      "project_id": "72490",
+      "title": "Tid-Bit",
+      "submitted": "2026-11-01",
+      "repo": "https://github.com/omruk5689-dev/TID-BIT",
+      "demo": "20400",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/72490",
+      "tier": "X",
+      "requested": 204,
+      "bom_total": null,
+      "verdict": "not_shipped",
+      "fail": [
+        "no .STEP assembly in repo",
+        "no firmware/code in repo",
+        "BOM not a CSV in repo root (found Assembly/BOM_Board1_PCB1_2026-11-01.csv)"
+      ],
+      "warn": []
+    },
+    {
+      "ship_id": "2417",
+      "project_id": "8837",
+      "title": "Electronic Chess Board",
+      "submitted": "2026-11-01",
+      "repo": "https://github.com/RyanGra15/Chess-Reimagined",
+      "demo": "12000",
+      "review_url": "https://stardance.hackclub.com/admin/certification/hardware/8837",
+      "tier": "A",
+      "requested": 120,
+      "bom_total": null,
+      "verdict": "ready",
+      "fail": [],
+      "warn": [
+        "BOM doesn't list shipping cost"
+      ]
+    }
+  ]
+}

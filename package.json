@@ -1,0 +1,12 @@
+{
+  "name": "sdhwex",
+  "version": "1.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "import": "node scripts/import-snapshot.mjs",
+    "test": "node --test"
+  },
+  "devDependencies": { "jsdom": "^26.1.0" }
+}
