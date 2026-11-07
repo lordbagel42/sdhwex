@@ -1,0 +1,15 @@
+{
+  "name": "sdhwex-manager",
+  "private": true,
+  "type": "module",
+  "description": "Manage sdhwex Cloudflare findings and feedback text. Data-only publishing, approvals, backups and conflict checks.",
+  "dependencies": {
+    "apps": "0.0.1-beta.122"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit --strict --skipLibCheck --module nodenext --moduleResolution nodenext --target es2022 index.ts"
+  }
+}

@@ -6,6 +6,8 @@ It detects the project ID from `https://stardance.hackclub.com/admin/certificati
 
 ## Cloudflare data updates
 
+Use the **sdhwex Manager** Executor app to edit reasons, warnings, project records, snapshot data and shipping-guidelines wording with approvals and publication backups. See [`executor-app/README.md`](executor-app/README.md). Remote edits update installed extensions automatically but do not rewrite the bundled GitHub JSON; export/reconcile the live feed before publishing from local files.
+
 The Chrome extension reads `https://sdhwex-data.enderium42.workers.dev/v1/triage.json` on page load and every five minutes while the page remains open. It validates JSON and caches it locally, retaining the last valid cache or bundled data if Cloudflare is unavailable. The card labels its source and last successful fetch time. The entire feed is downloaded: no project ID, page content, justification, cookies or authentication tokens are sent to the Worker. Cloudflare still receives normal connection metadata such as your IP address.
 
 To change reasons/findings, edit `data/snapshot.json` (build) or `data/design-snapshot.json` (design). Edit `data/remote-config.json` to change the shipping-guidelines sentence. Preserve the schema and use each report's actual check date. With an authenticated Cloudflare Wrangler CLI installed, run:
