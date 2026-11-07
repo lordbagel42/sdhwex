@@ -1,0 +1,5 @@
+name = "sdhwex-data"
+main = "cloudflare/worker.js"
+account_id = "2fa4104b17af8808577f12883fa657b1"
+compatibility_date = "2025-01-01"
+workers_dev = true

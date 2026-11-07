@@ -1,8 +1,21 @@
 {
   "manifest_version": 3,
   "name": "sdhwex",
-  "version": "1.2.0",
-  "description": "Adds design and build queue triage snapshots to hardware review pages. Offline, read-only findings; no live checking.",
+  "version": "1.3.0",
+  "description": "Hardware review findings and reasons, automatically refreshed from Cloudflare with an offline fallback.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://sdhwex-data.enderium42.workers.dev/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
   "content_scripts": [
     {
       "matches": [

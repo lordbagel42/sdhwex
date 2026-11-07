@@ -1,10 +1,11 @@
 {
   "name": "sdhwex",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
+    "deploy:data": "npm run build && wrangler deploy",
     "import": "node scripts/import-snapshot.mjs",
     "test": "node --test"
   },

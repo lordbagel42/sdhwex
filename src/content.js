@@ -1,21 +1,27 @@
-// Bundled locally with the snapshot and stylesheet by scripts/build.mjs.
+// Bundled styles and offline fallback, refreshed with JSON through the extension worker.
 function installTriage(buildSnapshot, cardCSS, designSnapshot) {
   'use strict';
   designSnapshot ??= { checkedAt: buildSnapshot.checkedAt, projects: [] };
   // Keep the existing host ID so cached pages and both distribution formats agree.
   const HOST_ID = 'build-queue-triage-card';
-  const GUIDELINES = 'Please refer to https://codex.hackclub.com/shipping/101/ for the full shipping guidelines.';
+  let GUIDELINES = 'Please refer to https://codex.hackclub.com/shipping/101/ for the full shipping guidelines.';
+  let feedStatus = 'Bundled offline fallback';
+  let revision = 0;
+  let lastRemote = '';
   const TOOLS_ID = 'stardance-rejection-guidelines';
   let rejectionTools = null;
   let rejectionField = null;
-  const queues = Object.fromEntries([['build', buildSnapshot], ['design', designSnapshot]].map(([stage, snapshot]) => [stage, {
+  function makeQueues(build, design) {
+    return Object.fromEntries([['build', build], ['design', design]].map(([stage, snapshot]) => [stage, {
     snapshot,
     projects: new Map(snapshot.projects.map(p => [p.project_id, p])),
     title: stage === 'design' ? 'Design queue triage' : 'Build queue triage',
     checkedAt: new Intl.DateTimeFormat('en-US', {
       year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC'
     }).format(new Date(`${snapshot.checkedAt}T00:00:00Z`))
-  }]));
+    }]));
+  }
+  let queues = makeQueues(buildSnapshot, designSnapshot);
   const dollars = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
   let suspended = false;
   let scheduled = false;
@@ -147,6 +153,7 @@ function installTriage(buildSnapshot, cardCSS, designSnapshot) {
     host.dataset.projectId = id;
     host.dataset.stage = stage;
     host.dataset.inferred = String(inferred);
+    host.dataset.revision = String(revision);
     host.setAttribute('aria-label', `${title} for project ${id}`);
     host.style.minWidth = '0';
     const shadow = host.attachShadow({ mode: 'open' });
@@ -165,13 +172,13 @@ function installTriage(buildSnapshot, cardCSS, designSnapshot) {
     source.append('Snapshot checked ');
     const time = element('time', checkedAt);
     time.dateTime = snapshot.checkedAt;
-    source.append(time, ' · Not a live check');
+    source.append(time, ' · Not a live check · ' + feedStatus);
     card.append(source);
     const p = projects.get(id);
     if (inferred && p) card.append(element('p', `Review stage not detected; showing the ${stage} snapshot matching this project ID. Confirm the review stage before using these notes.`, 'note'));
     if (!p) {
       card.append(element('p', `Project #${id} is not in this ${snapshot.projects.length}-project snapshot. This does not mean it passed or failed.`));
-      card.append(element('p', `Review the current project manually. To add newer ${stage} findings, import a newer triage report and rebuild.`, 'note'));
+      card.append(element('p', `Review the current project manually. New ${stage} findings are fetched automatically from Cloudflare; snapshot findings still need human verification.`, 'note'));
     } else {
       header.append(element('span', p.verdict === 'ready' ? 'Looks ready' : 'Not shipped', `badge ${p.verdict === 'ready' ? 'ready' : 'failed'}`));
       card.append(element('p', `${p.title} · #${id}`, 'project'));
@@ -248,7 +255,8 @@ function installTriage(buildSnapshot, cardCSS, designSnapshot) {
     }
     const { stage, inferred } = reviewStage(id);
     if (existing?.dataset.projectId === id && existing.dataset.stage === stage &&
-        existing.dataset.inferred === String(inferred) && existing.parentElement === container && existing.shadowRoot) {
+        existing.dataset.inferred === String(inferred) && existing.dataset.revision === String(revision) &&
+        existing.parentElement === container && existing.shadowRoot) {
       currentHost = existing;
       return;
     }
@@ -292,5 +300,38 @@ function installTriage(buildSnapshot, cardCSS, designSnapshot) {
   window.setInterval(() => {
     if (lastURL !== location.href) { lastURL = location.href; schedule(); }
   }, 750);
+  function refreshRemote() {
+    if (typeof chrome === 'undefined' || !chrome.runtime?.sendMessage) return;
+    try {
+      chrome.runtime.sendMessage({ type: 'sdhwex:get-data' }, response => {
+        if (chrome.runtime.lastError) return;
+        if (!response?.ok) {
+          if (!lastRemote && feedStatus !== 'Bundled fallback — Cloudflare unavailable') {
+            feedStatus = 'Bundled fallback — Cloudflare unavailable';
+            revision++;
+            schedule();
+          }
+          return;
+        }
+        try {
+          const status = response.source === 'offline-cache'
+            ? 'Offline cached Cloudflare feed'
+            : 'Cloudflare feed';
+          const label = status + ' · fetched ' + new Date(response.fetchedAt).toLocaleString();
+          const fingerprint = JSON.stringify(response.data) + label;
+          if (fingerprint === lastRemote) return;
+          const nextQueues = makeQueues(response.data.build, response.data.design);
+          queues = nextQueues;
+          GUIDELINES = response.data.guidelines;
+          feedStatus = label;
+          lastRemote = fingerprint;
+          revision++;
+          schedule();
+        } catch { /* Malformed responses never replace the bundled fallback. */ }
+      });
+    } catch { /* An extension reload can invalidate the old page context. */ }
+  }
   sync();
+  refreshRemote();
+  window.setInterval(refreshRemote, 5 * 60 * 1000);
 }

@@ -1,8 +1,24 @@
 # sdhwex
 
-An offline Chrome extension **and** Tampermonkey userscript built from the supplied `build-queue-triage.zip` and `design-queue-triage.zip`.
+A Chrome extension with Cloudflare-hosted JSON findings, reasons, warnings and feedback wording, plus a bundled offline fallback. The separate Tampermonkey userscript uses the bundled snapshot only.
 
-It detects the project ID from `https://stardance.hackclub.com/admin/certification/hardware/<ID>` and inserts an extra **Design queue triage** or **Build queue triage** card at the top of the project details column. Version 1.2.0 includes 175 design projects and preserves all 237 build projects.
+It detects the project ID from `https://stardance.hackclub.com/admin/certification/hardware/<ID>` and inserts an extra **Design queue triage** or **Build queue triage** card at the top of the project details column. Version 1.3.0 bundles 175 design and 237 build projects and refreshes Chrome findings from Cloudflare automatically.
+
+## Cloudflare data updates
+
+The Chrome extension reads `https://sdhwex-data.enderium42.workers.dev/v1/triage.json` on page load and every five minutes while the page remains open. It validates JSON and caches it locally, retaining the last valid cache or bundled data if Cloudflare is unavailable. The card labels its source and last successful fetch time. The entire feed is downloaded: no project ID, page content, justification, cookies or authentication tokens are sent to the Worker. Cloudflare still receives normal connection metadata such as your IP address.
+
+To change reasons/findings, edit `data/snapshot.json` (build) or `data/design-snapshot.json` (design). Edit `data/remote-config.json` to change the shipping-guidelines sentence. Preserve the schema and use each report's actual check date. With an authenticated Cloudflare Wrangler CLI installed, run:
+
+```sh
+npm run deploy:data
+```
+
+This validates and publishes the JSON feed via the `sdhwex-data` Cloudflare Worker. **Installed extensions pick up data changes without a new ZIP or reinstall.** The Worker has no public write endpoint. Snapshot JSON is public, like this repository. Allow about a minute for Cloudflare propagation plus the five-minute extension refresh interval.
+
+Executable JavaScript/styles stay bundled. Manifest V3 does not support remotely hosted executable extension code. Code changes require a new build/reload, or Chrome Web Store updates if published; this project does not bypass that restriction.
+
+`npm run build` produces `dist/sdhwex-chrome.zip` (and the legacy ZIP filename), and generates `cloudflare/worker.js` from the JSON files and `cloudflare/handler.js`. The userscript remains offline-only.
 
 ## Install in Chrome (no build needed)
 
@@ -12,7 +28,7 @@ It detects the project ID from `https://stardance.hackclub.com/admin/certificati
    `dist/chrome` inside your `sdhwex` checkout
 4. Reload your Stardance tab. Open a hardware review, or navigate there from the queue.
 
-For moving to another computer, extract `dist/stardance-triage-chrome.zip` and load the extracted folder containing `manifest.json`. Chrome does not load the ZIP directly.
+For moving to another computer, extract `dist/sdhwex-chrome.zip` and load the extracted folder containing `manifest.json`. Chrome does not load the ZIP directly.
 
 **Updating an existing installation:** click **Reload** on the extension in `chrome://extensions`, then reload Stardance. The folder has not changed.
 
@@ -53,9 +69,9 @@ The sentence is inserted at the cursor, replacing selected text if any, without 
 
 **These are static snapshots, not live checks.** Both supplied reports label their check date **November 4, 2026**. The build report has 237 projects (204 “Not shipped”, 33 “Looks ready”); the design report has 175 (119 “Not shipped”, 56 “Looks ready”). The dates and findings are preserved, not independently verified. Repositories and projects may have changed. “Looks ready” is not an approval. Verify draft feedback against the current evidence before sending it.
 
-The code makes **no network requests**, reads no authentication tokens or cookies, and sends no page or project data anywhere. Findings and styles are bundled locally. Opening repository/demo links is a normal user-initiated navigation. It never submits, approves, rejects, or claims a review. It only edits the justification textarea when you explicitly click **Insert shipping guidelines**; it never fills review forms automatically.
+The Chrome extension fetches only the fixed Cloudflare JSON endpoint through its background worker, without credentials or referrer. It never downloads executable code, reads no authentication tokens or cookies, and sends no review/page data. Styles and offline fallback findings are bundled locally. The userscript makes no network requests. Opening repository/demo links is a normal user-initiated navigation. It never submits, approves, rejects, or claims a review. It only edits the justification textarea when you explicitly click **Insert shipping guidelines**; it never fills review forms automatically.
 
-Chrome's site access is limited to `https://stardance.hackclub.com/*`. That origin-wide content-script match is intentional: Stardance uses Turbo, so the script must already be present when you enter a review from the queue without a full page load. Card insertion itself is limited to the numeric hardware-review URL and the known hardware details column. There are no extra permissions, background worker, remote scripts, external fonts, or telemetry.
+Chrome content-script access is limited to `https://stardance.hackclub.com/*`. The extension also has local-storage permission and network access to `https://sdhwex-data.enderium42.workers.dev/*`. That origin-wide content-script match is intentional: Stardance uses Turbo, so the script must already be present when you enter a review from the queue without a full page load. Card insertion itself is limited to the numeric hardware-review URL and the known hardware details column. The background worker fetches and validates JSON only. There are no remote scripts, external fonts, telemetry, or Cloudflare credentials in the extension.
 
 ## Stardance integration
 
@@ -105,4 +121,4 @@ Files:
 - `test/permanent-rejection.html` — labeled visual fixture for the native popup.
 - `test/hardware-review.html` — explicitly labeled visual fixture using the inspected Stardance selectors; not a copy of an authenticated review.
 
-Verification: 37 automated tests pass, including rendering all 237 build and 175 design records. The bundled script was also checked in Chromium against build and design fixtures at desktop (1440px) and mobile (390px), including clipboard success and preservation of the existing review draft. The permanent-rejection popup helper was also checked in a Chromium fixture at both sizes: insertion preserved surrounding text, restored the caret, and did not submit. The authenticated production review page and an installed Tampermonkey instance were not exercised.
+Historical verification (v1.2.0, before Cloudflare support): 37 automated tests passed, including rendering all 237 build and 175 design records. The bundled script was also checked in Chromium against build and design fixtures at desktop (1440px) and mobile (390px), including clipboard success and preservation of the existing review draft. The permanent-rejection popup helper was also checked in a Chromium fixture at both sizes: insertion preserved surrounding text, restored the caret, and did not submit. The authenticated production review page and an installed Tampermonkey instance were not exercised.
