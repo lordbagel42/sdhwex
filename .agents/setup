@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "${BASH_SOURCE[0]}")/.."
+
+echo 'Checking Node.js (20+ required)'
+node -e 'if (Number(process.versions.node.split(".")[0]) < 20) { console.error("sdhwex requires Node.js 20 or newer"); process.exit(1); }'
+
+if ! command -v zip >/dev/null 2>&1; then
+  echo 'Installing zip for extension packaging'
+  sudo -n apt-get update -qq
+  sudo -n env DEBIAN_FRONTEND=noninteractive apt-get install -y -qq zip
+fi
+
+echo 'Installing locked npm dependencies (including development tools)'
+time npm ci --include=dev --no-audit --no-fund
